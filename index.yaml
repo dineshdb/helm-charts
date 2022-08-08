@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  spring-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-08T07:34:07.750958697Z"
+    description: A Helm chart for Kubernetes
+    digest: 26d4dbd814b66a12db5bd843f70475ad4d207fa69ef7093efeeff3fc4f5cb71a
+    name: spring-app
+    type: application
+    urls:
+    - https://github.com/dineshdb/helm-charts/releases/download/spring-app-0.2.0/spring-app-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-08-08T07:34:07.750966497Z"
