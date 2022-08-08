@@ -1,0 +1,24 @@
+{{- if .Values.metrics.serviceMonitor.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: "{{ include "spring-app.fullname" . }}"
+  labels:
+    app.kubernetes.io/name: {{ template "spring-app.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    {{- if .Values.metrics.serviceMonitor.additionalLabels }}
+      {{ toYaml .Values.metrics.serviceMonitor.additionalLabels | indent 4 }}
+    {{- end }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  jobLabel: "{{ include "spring-app.fullname" . }}"
+  selector:
+    matchLabels:
+    {{- include "spring-app.selectorLabels" . | nindent 6 }}
+  endpoints:
+    - port: http
+      interval: 10s
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+{{- end }}
