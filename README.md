@@ -13,8 +13,12 @@ helm repo add dineshdb https://dbhattarai.info.np/helm-charts/
 helm install <app-name> dineshdb/<app-chart> -f <app-name-values>.yaml
 ```
 
-For a list of charts, [see](https://github.com/dineshdb/helm-charts/charts/).
+For a list of charts, [see](https://github.com/dineshdb/helm-charts/tree/main/charts).
 
 ## Copyright
 
 - Dinesh Bhattarai
+
+## License
+
+MIT
