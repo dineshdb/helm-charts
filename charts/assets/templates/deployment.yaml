@@ -37,10 +37,9 @@ spec:
             - name: http
               containerPort: {{ .Values.service.containerPort }}
               protocol: TCP
-      
           env:
           - name: PORT
-            value: {{ .Values.service.containerPort }}
+            value: {{ .Values.service.containerPort  | quote }}
           {{- range $key, $value := .Values.env }}
           - name: {{ $key }}
             value: {{ $value | quote }}
