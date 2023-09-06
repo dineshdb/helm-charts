@@ -55,9 +55,9 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{-with .Values.volumeMounts }}
+          {{- with .Values.volumeMounts }}
           volumeMounts:
-            {{- toYaml .Values.resources | nindent 12 }}
+            {{- toYaml . | nindent 12 }}
           {{- end }}
       {{- with .Values.volumes }}
       volumes:
