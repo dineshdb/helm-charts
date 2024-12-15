@@ -50,15 +50,18 @@ spec:
           - name: {{ $key }}
             value: {{ $value | quote }}
           {{- end }}
-
           livenessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.livenessProbe.path }}
               port: http
+            initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
+            timeoutSeconds: 5
           readinessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.readinessProbe.path }}
               port: http
+            initialDelaySeconds: {{ .Values.readinessProbe.initialDelaySeconds }}
+            timeoutSeconds: 5
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- with .Values.volumeMounts }}

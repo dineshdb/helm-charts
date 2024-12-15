@@ -20,6 +20,21 @@ fullnameOverride: ""
 voluems: []
 volumeMounts: []
 
+readinessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+  timeoutSeconds: 3
+livnessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+  timeoutSeconds: 3
+
 env: {}
 serviceAccount:
   # Specifies whether a service account should be created
