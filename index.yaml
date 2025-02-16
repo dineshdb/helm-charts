@@ -3,6 +3,16 @@ entries:
   assets:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-02-16T08:09:47.620036019Z"
+    description: A Helm chart for Kubernetes
+    digest: 11aa2d0348ce0fb726256ddcff77ec4313eb7c6028a3cf9811e9884870208bb7
+    name: assets
+    type: application
+    urls:
+    - https://github.com/dineshdb/helm-charts/releases/download/assets-0.7.3/assets-0.7.3.tgz
+    version: 0.7.3
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-12-15T12:18:55.263394495Z"
     description: A Helm chart for Kubernetes
     digest: fc7baeb26a8f6707f36f510b07eef3e17ed3e06e8389cd291099041e7eed973b
@@ -152,4 +162,4 @@ entries:
     urls:
     - https://github.com/dineshdb/helm-charts/releases/download/spring-app-0.2.0/spring-app-0.2.0.tgz
     version: 0.2.0
-generated: "2024-12-15T12:18:55.263473583Z"
+generated: "2025-02-16T08:09:47.620109346Z"
