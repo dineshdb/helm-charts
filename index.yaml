@@ -3,6 +3,16 @@ entries:
   assets:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-03-30T16:23:02.628205608Z"
+    description: A Helm chart for Kubernetes
+    digest: 1830df0a9c1d72c0df52e816ff697ff9b3d6096cf2334c75691c01947ff1e83a
+    name: assets
+    type: application
+    urls:
+    - https://github.com/dineshdb/helm-charts/releases/download/assets-0.7.4/assets-0.7.4.tgz
+    version: 0.7.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-02-16T08:09:47.620036019Z"
     description: A Helm chart for Kubernetes
     digest: 11aa2d0348ce0fb726256ddcff77ec4313eb7c6028a3cf9811e9884870208bb7
@@ -134,6 +144,16 @@ entries:
   spring-app:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-03-30T16:23:02.820127093Z"
+    description: A Helm chart for Kubernetes
+    digest: 28b088bb5d08f99675596133863b791806d31fd29e64add9dbcd9b9aec203e92
+    name: spring-app
+    type: application
+    urls:
+    - https://github.com/dineshdb/helm-charts/releases/download/spring-app-0.4.1/spring-app-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-08-09T16:50:32.992515071Z"
     description: A Helm chart for Kubernetes
     digest: b7d1bfe02b200c836b240461e41bfa477617a4e24dbcde23643e59e2b75e76a7
@@ -162,4 +182,4 @@ entries:
     urls:
     - https://github.com/dineshdb/helm-charts/releases/download/spring-app-0.2.0/spring-app-0.2.0.tgz
     version: 0.2.0
-generated: "2025-02-16T08:09:47.620109346Z"
+generated: "2025-03-30T16:23:02.820282132Z"
