@@ -21,6 +21,7 @@ voluems: []
 volumeMounts: []
 
 readinessProbe:
+  enabled: true
   path: /
   initialDelaySeconds: 15
   periodSeconds: 5
@@ -28,6 +29,7 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 3
 livenessProbe:
+  enabled: true
   path: /
   initialDelaySeconds: 15
   periodSeconds: 5
